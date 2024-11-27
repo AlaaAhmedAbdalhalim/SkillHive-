@@ -1,0 +1,19 @@
+<div class="d-flex flex-column align-items-center my-5 mx-2 mx-md-5 ">
+    <h3>Join as a Student or Teacher</h3>
+<div class="card d-flex my-3 flex-row align-items-center justify-content-around py-2    w-50 " >
+      <img src="../../../assets/Icons/Students.svg" class=" w-25 " alt="Student Icon">
+      <p class="card-text fs-6 m-0">I’m a <span>Student</span> , looking for Online Courses.</p>
+      <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadio1" value="Student"  [(ngModel)]="selectedOption">
+    
+  </div>
+  <div class="card d-flex flex-row align-items-center justify-content-around py-3  w-50" >
+    <img src="../../../assets/Icons/Teacher.svg" class=" w-25 " alt="Teacher Icon">
+      <p class="card-text fs-6 m-0">I’m a <span>Teacher</span> , Seeking to spread my Courses.</p>
+      <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadio2" value="Teacher"  [(ngModel)]="selectedOption">
+  </div>
+  <button class="btn btn-primary btn-sm mt-3 mb-1 disabled"  *ngIf="selectedOption=='' ">Create account</button>
+  <button class="btn btn-primary btn-sm mt-3 mb-1"  *ngIf="selectedOption!='' ">Create account</button>
+
+  <p class=" fw-light">Already have an account? <a routerLink="Login" > Log In</a></p>
+
+</div>

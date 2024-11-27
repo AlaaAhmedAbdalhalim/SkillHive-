@@ -1,0 +1,13 @@
+.w-25{
+width: 15% !important;
+}
+.btn {
+    background-color: var(--primaryColor);
+}
+
+@media (min-width: 320px) and (max-width:768px) { 
+   .card{
+    width: 100% !important;
+   }
+    
+ }
